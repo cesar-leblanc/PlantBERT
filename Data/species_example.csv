@@ -1,0 +1,46 @@
+PlotObservationID,Species,Cover
+0,Holcus lanatus,20
+0,Fagus sylvatica,15
+0,Festuca rubra,25
+0,Plantago lanceolata,10
+0,Ranunculus repens,30
+1,Sisyrinchium platense,10
+1,Epimedium pinnatum subsp. colchicum,5
+1,Dactylorhiza foliosa,15
+1,Porella canariensis,8
+1,Asterella africana,12
+1,Hedera maroccana,7
+1,Lomelosia olgae,6
+1,Saxifraga camposii subsp. leptophylla,10
+1,Lactuca perennis subsp. granatensis,9
+1,Primula elatior x veris,18
+2,Holcus lanatus,10
+2,Fagus sylvatica,5
+2,Festuca rubra,8
+2,Plantago lanceolata,7
+2,Ranunculus repens,6
+2,Unknown species,5
+2,Vineyard crop,10
+2,Potato crop,9
+2,Rye crop,4
+2,Unknown species,8
+2,Poa trivialis,6
+2,Trifolium repens,5
+2,Agrostis capillaris,5
+2,Agrostis stolonifera,8
+2,Anthoxanthum odoratum,4
+3,Nitzschia gracilis,20
+3,Gomphonema species,10
+3,Fragilaria capucina,5
+3,Diploneis ovalis,8
+3,Cymbella species,12
+3,Batrachospermum moniliforme,6
+3,Aphanothece microscopica,9
+3,Thalictrum morisonii subsp. morisonii,10
+3,Saxifraga leptophylla,8
+3,Dianthus acantholimonoides,12
+4,Poa trivialis,5
+4,Trifolium repens,20
+4,Agrostis capillaris,35
+4,Agrostis stolonifera,10
+4,Anthoxanthum odoratum,30
