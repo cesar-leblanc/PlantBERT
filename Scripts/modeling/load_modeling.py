@@ -1,14 +1,19 @@
 import transformers
 import torch
 
-def load_tokenizer(args, task, fold):
+def load_tokenizer(args, task, fold=None):
     if task == "fill-mask":
         model_checkpoint = f"bert-{args.model.split('-')[0]}-uncased"
-    else:
+    elif task == "text classification":
         if 'masking' in args.pipeline:
             model_checkpoint = f"plantbert_fill_mask_model_{args.model}_{args.method}_{args.batch_size}_{args.learning_rate}_{fold}"
         else:
             model_checkpoint = f"bert-{args.model}-uncased"
+    else:
+        if task == "predict habitat":
+            model_checkpoint = args.model_habitat
+        else:
+            model_checkpoint = args.model_species
     tokenizer = transformers.AutoTokenizer.from_pretrained(f'../Models/{model_checkpoint}/')
     return tokenizer
 

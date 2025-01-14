@@ -79,17 +79,27 @@ def eval_model(eval_dataloader, model, accelerator, config):
     
     return accuracy_top_3_micro, accuracy_level_2_micro, accuracy_level_1_micro, precision_macro, recall_macro, f1_macro
 
-def make_predictions(args, vegetation_plots, model, task):
+def make_predictions(args, vegetation_plots, model, tokenizer, task):
     predictions = []
     if task == 'predict habitat':
         start_time = time.time()
         for vegetation_plot in tqdm.tqdm(vegetation_plots["Observations"], desc="Identifying habitat types"):
+            inputs = tokenizer(vegetation_plot, truncation=True, max_length=512, return_tensors='pt')
+            vegetation_plot = tokenizer.decode(inputs['input_ids'][0], skip_special_tokens=True)
+            last_comma_index = vegetation_plot.rfind(',')
+            if last_comma_index != -1:
+                vegetation_plot = vegetation_plot[:last_comma_index]
             prediction = model(vegetation_plot)[0]
             predictions.append([pred['label'] for pred in prediction])
         elapsed_time = time.time() - start_time
     else:
         start_time = time.time()
         for vegetation_plot in tqdm.tqdm(vegetation_plots["Observations"], desc="Predicting missing species"):
+            inputs = tokenizer(vegetation_plot, truncation=True, max_length=510, return_tensors='pt')
+            vegetation_plot = tokenizer.decode(inputs['input_ids'][0], skip_special_tokens=True)
+            last_comma_index = vegetation_plot.rfind(',')
+            if last_comma_index != -1:
+                vegetation_plot = vegetation_plot[:last_comma_index]
             vegetation_plot = vegetation_plot.split(', ')
             best_predictions = []
             for _ in range(args.k_species):
