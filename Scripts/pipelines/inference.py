@@ -1,6 +1,6 @@
 from data.load_data import load_vegetation_plots
 from data.preprocess_data import gbif_normalization
-from modeling.load_modeling import load_model
+from modeling.load_modeling import load_model, load_tokenizer
 from modeling.utils_modeling import make_predictions
 from data.utils_data import add_column
 from data.save_data import save_vegetation_plots
@@ -16,12 +16,14 @@ class MakePredictions:
 
     def predict_habitat(self, args, vegetation_plots):
         model = load_model(args, "predict habitat")
-        predictions, elapsed_time = make_predictions(args, vegetation_plots, model, "predict habitat")
+        tokenizer = load_tokenizer(args, "predict habitat")
+        predictions, elapsed_time = make_predictions(args, vegetation_plots, model, tokenizer, "predict habitat")
         return predictions, elapsed_time
 
     def predict_species(self, args, vegetation_plots):
         model = load_model(args, "predict species")
-        predictions, elapsed_time =  make_predictions(args, vegetation_plots, model, "predict species")
+        tokenizer = load_tokenizer(args, "predict species")
+        predictions, elapsed_time =  make_predictions(args, vegetation_plots, model, tokenizer, "predict species")
         return predictions, elapsed_time
 
     def write_predictions(self, vegetation_plots, type, predictions):
