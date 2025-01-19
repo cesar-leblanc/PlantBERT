@@ -63,7 +63,7 @@ On many systems Python comes pre-installed. You can try running the following co
 ```script
 python --version
 ```
-If Python is not already installed or if it is installed with version 3.7 or lower, you will need to install a functional version Python on your system by following the [official documentation](https://www.python.org/downloads/) that contains a detailed guide on how to setup Python.
+If Python is not already installed or if it is installed with version 3.7 or lower, you will need to install a functional version of Python on your system by following the [official documentation](https://www.python.org/downloads/) that contains a detailed guide on how to setup Python.
 
 If you have Python version 3.4 or later (which is required to use Pl@ntBERT), pip should be included by default. To make sure you have it, you can type:
 ```script
@@ -97,7 +97,7 @@ The framework is optimized for data files from the European Vegetation Archive (
 - the columns `PlotObservationID`, `Species` and `Cover` from the species file (vegetation-plot data)
 - the columns `PlotObservationID`, `Habitat`, `Longitude` and `Latitude` from the header file (plot attributes)
 
-You can have others columns, but they will be ignored. Two examples of how your files should look like are present within the `Data` folder (`species_example.csv` and `header_example.csv`).
+You can have other columns, but they will be ignored. Two examples of how your files should look like are present within the `Data` folder (`species_example.csv` and `header_example.csv`).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +195,7 @@ python main.py --pipeline classification --model large --method random --folds 2
 
 ### Inference
 
-Before making predictions, make sure you include a new file that describes the vegetation data of your choice in the `Datasets` folder: `vegetation_plots.csv`. The file, tab-separated, should contain only one column (if there are others columns they will be ignored):
+Before making predictions, make sure you include a new file that describes the vegetation data of your choice in the `Datasets` folder: `vegetation_plots.csv`. The file, tab-separated, should contain only one column (if there are other columns they will be ignored):
 - `Observations` (strings): a list of comma-separated names of species, ranked (if possible) in order of abundance
 
 An example of how your file should look like is present within the `Datasets` folder (`vegetation_plots_example.csv`).
@@ -229,12 +229,12 @@ This section lists every major frameworks/libraries used to create the models in
 * [![scikit-learn](https://img.shields.io/badge/scikit--learn-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org) - for quantifying the quality of the predictions
 * [![Hugging Face](https://img.shields.io/badge/Hugging_Face-yellow?logo=huggingface&logoColor=white)](https://huggingface.co/) - for pretrained models to perform training tasks
 * [![pandas](https://img.shields.io/badge/pandas-blue?logo=pandas&logoColor=white)](https://pandas.pydata.org/) - for fast, flexible, and expressive data structures
-* [![Verde](https://img.shields.io/badge/verde-greeb?logo=github&logoColor=white)](https://github.com/fatiando/verde) - for processing spatial data and interpolating it
+* [![Verde](https://img.shields.io/badge/verde-green?logo=github&logoColor=white)](https://github.com/fatiando/verde) - for processing spatial data and interpolating it
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
 
-This roadmap outlines the planned features and milestones for the project. Please note that the roadmap is subject to change and may be updated as the project progress.
+This roadmap outlines the planned features and milestones for the project. Please note that the roadmap is subject to change and may be updated as the project progresses.
 
 - [ ] Implement multilingual user support
     - [x] English
