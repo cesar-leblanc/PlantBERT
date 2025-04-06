@@ -57,6 +57,9 @@ This framework aims to leverage large language models to learn the "syntax" of p
 
 ## Prerequisites
 
+Pl@ntBERT has been tested on the following system:
++ macOS: Sonoma (14.7.1)
+
 Python version 3.8 or higher, pip, Git, CUDA, and Git LFS are required.
 
 On many systems Python comes pre-installed. You can try running the following command to check and see if a correct version is already installed:
