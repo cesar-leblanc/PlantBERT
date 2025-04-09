@@ -201,7 +201,7 @@ python main.py --pipeline classification --model large --method random --folds 2
 Before making predictions, make sure you include a new file that describes the vegetation data of your choice in the `Datasets` folder: `vegetation_plots.csv`. The file, tab-separated, should contain only one column (if there are other columns they will be ignored):
 - `Observations` (strings): a list of comma-separated names of species, ranked (if possible) in order of abundance
 
-An example of how your file should look like is present within the `Datasets` folder (`vegetation_plots_example.csv`).
+An example of how your file should look like is present within the `Datasets` folder (`vegetation_plots_example.csv`). After the inference, your file will be modified with the addition of a new column named `Habitat` and/or a new column named `Species`, containing for each line (i.e., for each vegetation plot) the EUNIS code(s) of the most likely habitat type(s) and/or the scientific name(s) of the most likely missing species.
 
 To predict the missing species and habitat classes of the new samples using previously trained models, make sure the weights of the desired models are stored in the `Models` folder. You can also use the models already provided (i.e., first fold of a base model trained on dominance-ordered species sequences with a batch size of 2 and a learning rate of 2e-5 that encodes binomial names as one token) and then run the following command:
 ```script
