@@ -106,7 +106,7 @@ You can have other columns, but they will be ignored. Two examples of how your f
 
 ## Installation
 
-Firstly, `Pl@ntBERT` can be installed via repository cloning:
+Firstly, `Pl@ntBERT` can be installed via repository cloning almost instantly:
 ```script
 git clone https://github.com/cesar-leblanc/plantbert.git Pl@ntBERT
 cd Pl@ntBERT
