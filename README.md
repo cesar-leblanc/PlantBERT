@@ -113,7 +113,7 @@ cd Pl@ntBERT
 ```
 
 Secondly, make sure that the dependencies listed in the `environment.yml` and `requirements.txt` files are installed.
-One way to do so is to use `venv`:
+One way to do so is to use `venv`, which should take a bit less than 3 minutes:
 ```script
 python -m venv ~/environments/pl@ntbert
 source ~/environments/pl@ntbert/bin/activate
