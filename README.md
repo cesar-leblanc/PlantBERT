@@ -120,7 +120,7 @@ source ~/environments/pl@ntbert/bin/activate
 pip install -r requirements.txt
 ```
 
-Thirdly, make sure you installed the pre-trained and fine-tuned models:
+Thirdly, make sure you installed the pre-trained and fine-tuned models (as they have a large size, this is the longest step, which could take a bit more than three quarters):
 ```script
 git lfs install
 git clone https://huggingface.co/CesarLeblanc/bert-base-uncased Models/bert-base-uncased
