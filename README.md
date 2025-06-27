@@ -138,7 +138,7 @@ Then, to check that the installation went well, use the following command:
 python main.py --pipeline check
 ```
 
-If the framework was properly installed, it should output:
+If the framework was properly installed, it should output after a few seconds:
 ```script
 Files are all present.
 
