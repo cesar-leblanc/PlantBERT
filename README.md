@@ -22,7 +22,7 @@
   <h1></h1>
 </div>
 
-This is the code for the framework of the paper [Learning the syntax of plant assemblages](https://www.researchsquare.com/article/rs-6304381/v1) submitted in *Nature Plants*.  
+This is the code for the framework of the paper [Learning the syntax of plant assemblages](https://www.researchsquare.com/article/rs-6304381/v1) currently under review in *Nature Plants*.  
 If you use this code for your work and wish to credit the authors, you can cite the paper (as of now, available only as a preprint):
 ```
 @article{leblanc2025learning,
