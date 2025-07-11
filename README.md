@@ -147,6 +147,8 @@ Dependencies are correctly installed.
 Environment is properly configured.
 ```
 
+All in all, the whole installation is expected to take a maximum of one hour on any "normal" computer.
+
 Make sure to place your species and header data files inside the `Data` folder before going further.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
