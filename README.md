@@ -44,6 +44,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
   - [Classification](#classification)
   - [Inference](#inference)
   - [Pipeline](#pipeline)
+- [Demo](#demo)
 - [Libraries](#libraries)
 - [Roadmap](#roadmap)
 - [Unlicense](#unlicense)
