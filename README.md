@@ -224,6 +224,10 @@ To run the full pipeline and perform all tasks at once (i.e., checking if the fr
 python main.py --pipeline check curation masking classification inference
 ```
 
+<div align="center">
+  <img src="Images/tasks.png" alt="Project logo" width="1000">
+</div>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Demo 
