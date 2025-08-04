@@ -225,7 +225,7 @@ python main.py --pipeline check curation masking classification inference
 ```
 
 <div align="center">
-  <img src="Images/tasks.png" alt="Project logo" width="1000">
+  <img src="Images/tasks.png" alt="Project tasks" width="1000">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
