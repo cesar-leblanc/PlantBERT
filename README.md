@@ -60,6 +60,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
 Pl@ntBERT has been tested on the following systems:
 + macOS: Sonoma (14.7.1)
 + Linux: CentOS (7.4.1708)
++ Windows: 10 (22H2)
 
 Python version 3.8 or higher, pip, Git, CUDA, and Git LFS are required.
 
