@@ -19,7 +19,7 @@ Args:
     predictions (`list` of `int`): Predicted labels.
     references (`list` of `int`): Ground truth labels.
     normalize (`boolean`): If set to False, returns the number of correctly classified samples. Otherwise, returns the fraction of correctly classified samples. Defaults to True.
-    sample_weight (`list` of `float`): Sample weights Defaults to None.
+    sample_weight (`list` of `float`): Sample weights. Defaults to None.
 
 Returns:
     accuracy (`float` or `int`): Accuracy score. Minimum possible value is 0. Maximum possible value is 1.0, or the number of examples input, if `normalize` is set to `True`. A higher score means higher accuracy.
