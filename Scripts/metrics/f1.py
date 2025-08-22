@@ -22,7 +22,7 @@ Args:
         - 'macro': Calculate metrics for each label, and find their unweighted mean. This does not take label imbalance into account.
         - 'weighted': Calculate metrics for each label, and find their average weighted by support (the number of true instances for each label). This alters `'macro'` to account for label imbalance. This option can result in an F-score that is not between precision and recall.
         - 'samples': Calculate metrics for each instance, and find their average (only meaningful for multilabel classification).
-    sample_weight (`list` of `float`): Sample weights Defaults to None.
+    sample_weight (`list` of `float`): Sample weights. Defaults to None.
 
 Returns:
     f1 (`float` or `array` of `float`): F1 score or list of f1 scores, depending on the value passed to `average`. Minimum possible value is 0. Maximum possible value is 1. Higher f1 scores are better.
