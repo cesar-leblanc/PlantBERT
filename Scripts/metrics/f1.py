@@ -29,25 +29,25 @@ Returns:
 
 Examples:
 
-    Example 1-A simple binary example
+    Example 1-A simple binary example:
         >>> f1_metric = evaluate.load("f1")
         >>> results = f1_metric.compute(references=[0, 1, 0, 1, 0], predictions=[0, 0, 1, 1, 0])
         >>> print(results)
         {'f1': 0.5}
 
-    Example 2-The same simple binary example as in Example 1, but with `pos_label` set to `0`.
+    Example 2-The same simple binary example as in Example 1, but with `pos_label` set to `0`:
         >>> f1_metric = evaluate.load("f1")
         >>> results = f1_metric.compute(references=[0, 1, 0, 1, 0], predictions=[0, 0, 1, 1, 0], pos_label=0)
         >>> print(round(results['f1'], 2))
         0.67
 
-    Example 3-The same simple binary example as in Example 1, but with `sample_weight` included.
+    Example 3-The same simple binary example as in Example 1, but with `sample_weight` included:
         >>> f1_metric = evaluate.load("f1")
         >>> results = f1_metric.compute(references=[0, 1, 0, 1, 0], predictions=[0, 0, 1, 1, 0], sample_weight=[0.9, 0.5, 3.9, 1.2, 0.3])
         >>> print(round(results['f1'], 2))
         0.35
 
-    Example 4-A multiclass example, with different values for the `average` input.
+    Example 4-A multiclass example, with different values for the `average` input:
         >>> predictions = [0, 2, 1, 0, 0, 1]
         >>> references = [0, 1, 2, 0, 1, 2]
         >>> results = f1_metric.compute(predictions=predictions, references=references, average="macro")
@@ -63,7 +63,7 @@ Examples:
         >>> print(results)
         {'f1': array([0.8, 0. , 0. ])}
 
-    Example 5-A multi-label example
+    Example 5-A multi-label example:
         >>> f1_metric = evaluate.load("f1", "multilabel")
         >>> results = f1_metric.compute(predictions=[[0, 1, 1], [1, 1, 0]], references=[[0, 1, 1], [0, 1, 0]], average="macro")
         >>> print(round(results['f1'], 2))
