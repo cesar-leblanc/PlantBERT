@@ -28,7 +28,10 @@ If you use this code for your work and wish to credit the authors, you can cite 
 @article{leblanc2025learning,
   title={Learning the syntax of plant assemblages},
   author={Leblanc, C{\'e}sar and Bonnet, Pierre and Servajean, Maximilien and Thuiller, Wilfried and Chytr{\`y}, Milan and A{\'c}i{\'c}, Svetlana and Argagnon, Olivier and Biurrun, Idoia and Bonari, Gianmaria and Bruelheide, Helge and others},
-  year={2025}
+  journal={Nature Plants},
+  pages={1--15},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 This framework aims to leverage large language models to learn the "syntax" of plant species co-occurrence patterns. In particular, because Pl@ntBERT captures latent dependencies between species across diverse ecosystems, the framework can be used to identify the habitats of vegetation plots.
