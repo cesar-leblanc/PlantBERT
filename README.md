@@ -23,7 +23,7 @@
 </div>
 
 This is the code for the framework of the paper [Learning the syntax of plant assemblages](https://www.nature.com/articles/s41477-025-02105-7) published in *Nature Plants*.  
-If you use this code for your work and wish to credit the authors, you can cite the paper (as of now, available only as a preprint):
+If you use this code for your work and wish to credit the authors, you can cite the paper:
 ```
 @article{leblanc2025learning,
   title={Learning the syntax of plant assemblages},
