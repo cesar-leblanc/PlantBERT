@@ -55,6 +55,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
 - [Troubleshooting](#troubleshooting)
 - [Team](#team)
 - [Structure](#structure)
+- [References](#references)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
