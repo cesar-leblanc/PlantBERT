@@ -97,7 +97,7 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
         for vegetation_plot in tqdm.tqdm(vegetation_plots["Observations"], desc="Predicting missing species"):
             inputs = tokenizer(vegetation_plot, truncation=True, max_length=512-2*args.k_species+1, return_tensors='pt')
             vegetation_plot = tokenizer.decode(inputs['input_ids'][0], skip_special_tokens=True)
-            if len(inputs['input_ids'][0]) > 512-2*args.k_species+1:
+            if len(inputs['input_ids'][0]) >= 512-2*args.k_species+1:
                 last_comma_index = vegetation_plot.rfind(',')
                 vegetation_plot = vegetation_plot[:last_comma_index]
             vegetation_plot = vegetation_plot.split(', ')
