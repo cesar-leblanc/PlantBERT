@@ -112,7 +112,7 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
                     while True:
                         prediction = model(masked_vegetation_plot)[j]
                         species = prediction['token_str']
-                        if species in vegetation_plot or species in best_predictions:
+                        if species in vegetation_plot:
                             j += 1
                         else:
                             break
