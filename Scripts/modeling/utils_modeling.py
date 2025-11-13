@@ -93,6 +93,7 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
             predictions.append([pred['label'] for pred in prediction])
         elapsed_time = time.time() - start_time
     else:
+        species_in_plantbert = list(tokenizer.added_tokens_encoder.keys() - list(tokenizer.special_tokens_map.values()))
         start_time = time.time()
         for vegetation_plot in tqdm.tqdm(vegetation_plots["Observations"], desc="Predicting missing species"):
             inputs = tokenizer(vegetation_plot, truncation=True, max_length=512-2*args.k_species+1, return_tensors='pt')
@@ -112,7 +113,7 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
                     while True:
                         prediction = model(masked_vegetation_plot)[j]
                         species = prediction['token_str']
-                        if species in vegetation_plot:
+                        if species in vegetation_plot or species not in species_in_plantbert:
                             j += 1
                         else:
                             break
