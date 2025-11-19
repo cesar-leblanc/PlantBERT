@@ -81,6 +81,9 @@ def eval_model(eval_dataloader, model, accelerator, config):
 
 def make_predictions(args, vegetation_plots, model, tokenizer, task):
     predictions = []
+    scores = []
+    positions = []
+    completed_plots = []
     if task == 'predict habitat':
         start_time = time.time()
         for vegetation_plot in tqdm.tqdm(vegetation_plots["Observations"], desc="Identifying habitat types"):
@@ -92,6 +95,7 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
             prediction = model(vegetation_plot)[0]
             predictions.append([pred['label'] for pred in prediction])
         elapsed_time = time.time() - start_time
+        return predictions, elapsed_time
     else:
         species_in_plantbert = list(tokenizer.added_tokens_encoder.keys() - list(tokenizer.special_tokens_map.values()))
         start_time = time.time()
@@ -103,6 +107,8 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
                 vegetation_plot = vegetation_plot[:last_comma_index]
             vegetation_plot = vegetation_plot.split(', ')
             best_predictions = []
+            best_scores = []
+            best_positions = []
             for _ in range(args.k_species):
                 max_score = 0
                 best_prediction = None
@@ -124,7 +130,12 @@ def make_predictions(args, vegetation_plots, model, tokenizer, task):
                         best_prediction = species
                         best_position = position
                 best_predictions.append(best_prediction)
+                best_scores.append(max_score)
+                best_positions.append(best_position)
                 vegetation_plot.insert(best_position, best_prediction)
             predictions.append(best_predictions)
+            scores.append(best_scores)
+            positions.append(best_positions)
+            completed_plots.append(vegetation_plot)
         elapsed_time = time.time() - start_time
-    return predictions, elapsed_time
+        return predictions, scores, positions, completed_plots, elapsed_time

@@ -56,10 +56,15 @@ def insert_random_mask(batch, data_collator):
     masked_inputs = data_collator(features)
     return {"masked_" + k: v.numpy() for k, v in masked_inputs.items()}
 
-def add_column(vegetation_plots, type, predictions):
+def add_column(vegetation_plots, type, predictions, scores=None, positions=None, completed_plots=None):
     predictions = [', '.join(pred) for pred in predictions]
     if type == "habitat":
         vegetation_plots['Habitat'] = predictions
     else:
-        vegetation_plots['Species'] = predictions
+        scores = [', '.join([str(round(score * 100, 2)) for score in score_list]) for score_list in scores]
+        positions = [', '.join([str(pos) for pos in pos_list]) for pos_list in positions]
+        vegetation_plots['Likely missing species'] = predictions
+        vegetation_plots['Scores of likely missing species'] = scores
+        vegetation_plots['Positions of likely missing species'] = positions
+        vegetation_plots['Completed vegetation plots'] = completed_plots
     return vegetation_plots
