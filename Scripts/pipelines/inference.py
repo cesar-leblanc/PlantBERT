@@ -23,11 +23,11 @@ class MakePredictions:
     def predict_species(self, args, vegetation_plots):
         model = load_model(args, "predict species")
         tokenizer = load_tokenizer(args, "predict species")
-        predictions, elapsed_time =  make_predictions(args, vegetation_plots, model, tokenizer, "predict species")
-        return predictions, elapsed_time
+        predictions, scores, positions, completed_plots, elapsed_time =  make_predictions(args, vegetation_plots, model, tokenizer, "predict species")
+        return predictions, scores, positions, completed_plots, elapsed_time
 
-    def write_predictions(self, vegetation_plots, type, predictions):
-        vegetation_plots = add_column(vegetation_plots, type, predictions)
+    def write_predictions(self, vegetation_plots, type, predictions, scores=None, positions=None, completed_plots=None):
+        vegetation_plots = add_column(vegetation_plots, type, predictions, scores, positions, completed_plots)
         return vegetation_plots
 
     def save_data(self, vegetation_plots):
@@ -44,7 +44,7 @@ class MakePredictions:
             accelerator.print(f"Predicting habitats took {time_habitat:.2f} seconds")
             vegetation_plots = self.write_predictions(vegetation_plots, "habitat", predictions_habitat)
         if args.predict_species:
-            predictions_species, time_species = self.predict_species(args, vegetation_plots)
+            predictions_species, scores_species, positions_species, completed_plots_species, time_species = self.predict_species(args, vegetation_plots)
             accelerator.print(f"Predicting species took {time_species:.2f} seconds")
-            vegetation_plots = self.write_predictions(vegetation_plots, "species", predictions_species)
+            vegetation_plots = self.write_predictions(vegetation_plots, "species", predictions_species, scores_species, positions_species, completed_plots_species)
         self.save_data(vegetation_plots)
