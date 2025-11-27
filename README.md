@@ -380,6 +380,6 @@ Pl@ntBERT is currently maintained by [César Leblanc](https://github.com/cesar-l
 Here is an unexhaustive list of academic research works leveraging Pl@ntBERT:
 - **Leblanc, C.**, et al. (2025). Learning the syntax of plant assemblages. In *Nature Plants*. ([original Pl@ntBERT paper](https://www.nature.com/articles/s41477-025-02105-7))
 - **Leblanc, C.**, et al. (2025). Mapping biodiversity at very-high resolution in Europe. In *Proceedings of the Computer Vision and Pattern Recognition Conference*. ([Pl@ntBERT used to map the distribution of habitats in Europe](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/papers/Leblanc_Mapping_biodiversity_at_very-high_resolution_in_Europe_CVPRW_2025_paper.pdf))
-
+- **Picek, L.**, et al. (2025). GeoPl@ntNet: A Platform for Exploring Essential Biodiversity Variables. In *Proceedings of the European Conference on Artificial Intelligence*. ([Pl@ntBERT used in a platform for exploring habitats distribution predictions](https://ebooks.iospress.nl/doi/10.3233/FAIA251430))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
