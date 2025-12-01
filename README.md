@@ -329,7 +329,8 @@ Pl@ntBERT is currently maintained by [César Leblanc](https://github.com/cesar-l
     ├── Datasets                                  -> Vegetation datasets
     │   └── vegetation_plots_example.csv          -> Vegetation plots example data
     ├── Images                                    -> Image assets
-    │   └── logo.png                              -> Project logo
+    │   ├── logo.png                              -> Project logo
+    │   └── tasks.png                             -> List of tasks image
     ├── Models                                    -> Pre-trained and fine-tuned models
     ├── README.md                                 -> Project overview
     ├── SECURITY.md                               -> Security policy
