@@ -164,7 +164,7 @@ Make sure to place your species and header data files inside the `Data` folder b
 
 ### Curation
 
-To pre-process the data from the European Vegetation Archive and create the fill-mask and text classification datasets:
+To pre-process the data from the EVA and create the fill-mask and text classification datasets:
 ```script
 python main.py --pipeline curation
 ```
