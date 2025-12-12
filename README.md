@@ -61,7 +61,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
 
 ## Prerequisites
 
-Pl@ntBERT has been tested on the following systems:
+`Pl@ntBERT` has been tested on the following systems:
 + macOS: Sonoma (14.7.1)
 + Linux: CentOS (7.4.1708)
 + Windows: 10 (22H2)
