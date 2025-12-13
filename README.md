@@ -36,7 +36,7 @@ If you use this code for your work and wish to credit the authors, you can cite 
 ```
 This framework aims to leverage large language models to learn the "syntax" of plant species co-occurrence patterns. In particular, because Pl@ntBERT captures latent dependencies between species across diverse ecosystems, the framework can be used to identify the habitats of vegetation plots.
 
-## Table of Contents
+## 📚 Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Data](#data)
@@ -59,7 +59,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Prerequisites
+## ⏪ Prerequisites
 
 `Pl@ntBERT` has been tested on the following systems:
 + macOS: Sonoma (14.7.1)
@@ -100,7 +100,7 @@ If Git LFS is not installed, please install it by following the official instruc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Data
+## 📊 Data
 
 The framework is optimized for data files from the European Vegetation Archive (EVA). These files contain all the information required for the proper functioning of the framework, i.e., for each vegetation plot the full list of vascular plant species, the estimates of cover abundance of each species, the location and the EUNIS classification. Once the database is downloaded (more information [here](http://euroveg.org/eva-database)), make sure you rename species and header data files respectively as `species.csv` and `header.csv`. All columns from the files are not needed, but if you decide to remove some of them to save space on your computer, make sure that the values are comma-separated and that you have at least:
 - the columns `PlotObservationID`, `Species` and `Cover` from the species file (vegetation-plot data)
@@ -110,7 +110,7 @@ You can have other columns, but they will be ignored. Two examples of how your f
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Installation
+## 🔧 Installation
 
 Firstly, `Pl@ntBERT` can be installed via repository cloning almost instantly:
 ```script
@@ -160,7 +160,7 @@ Make sure to place your species and header data files inside the `Data` folder b
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Examples
+## 🎒 Examples
 
 ### Curation
 
@@ -236,13 +236,13 @@ python main.py --pipeline check curation masking classification inference
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Demo 
+## 👀 Demo 
 
 If you only have a few vegetation plots from which you want to find potentially missing species or identify the habitat type, a quicker and easier way to use Pl@ntBERT is to visit the application hosted [here](https://huggingface.co/spaces/CesarLeblanc/plantbert_space).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Libraries
+## 🧠 Libraries
 
 This section lists every major frameworks/libraries used to create the models included in the project:
 
@@ -253,7 +253,7 @@ This section lists every major frameworks/libraries used to create the models in
 * [![Verde](https://img.shields.io/badge/verde-green?logo=github&logoColor=white)](https://github.com/fatiando/verde) - for processing spatial data and interpolating it
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Roadmap
+## 🚆 Roadmap
 
 This roadmap outlines the planned features and milestones for the project. Please note that the roadmap is subject to change and may be updated as the project progresses.
 
@@ -285,19 +285,19 @@ This roadmap outlines the planned features and milestones for the project. Pleas
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Unlicense
+## 🤲 Unlicense
 
 This framework is distributed under the Unlicense, meaning that it is dedicated to public domain. See `UNLICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+## 👫 Contributing
 
 If you plan to contribute new features, please first open an issue and discuss the feature with us. See `CONTRIBUTING.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Troubleshooting
+## 🚥 Troubleshooting
 
 - an internet connection is necessary for the check task (for GitHub access) and for the curation and inference tasks (for GBIF normalization).
 - before using a model for inference, make sure you trained this exact same model (with the required set of parameters) on the required task.
@@ -305,14 +305,14 @@ If you plan to contribute new features, please first open an issue and discuss t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Team
+## 🏢 Team
 
 Pl@ntBERT is a community-driven project with several skillful engineers and researchers contributing to it.  
 Pl@ntBERT is currently maintained by [César Leblanc](https://github.com/cesar-leblanc) with major contributions coming from [Alexis Joly](https://github.com/alexisjoly), [Pierre Bonnet](https://github.com/bonnetamap), [Maximilien Servajean](https://github.com/maximiliense), and the amazing people from the [Pl@ntNet Team](https://github.com/plantnet) in various forms and means.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Structure
+## 🚧 Structure
 
     .
     ├── .github                                   -> GitHub-specific files
@@ -376,7 +376,7 @@ Pl@ntBERT is currently maintained by [César Leblanc](https://github.com/cesar-l
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## References
+## 🎓 References
 
 Here is an unexhaustive list of academic research works leveraging Pl@ntBERT:
 - **Leblanc, C.**, et al. (2025). Learning the syntax of plant assemblages. In *Nature Plants*. ([original Pl@ntBERT paper](https://www.nature.com/articles/s41477-025-02105-7))
