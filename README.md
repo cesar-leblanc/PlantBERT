@@ -38,24 +38,24 @@ This framework aims to leverage large language models to learn the "syntax" of p
 
 ## 📚 Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Data](#data)
-- [Installation](#installation)
-- [Examples](#examples)
+- [Prerequisites](#-prerequisites)
+- [Data](#-data)
+- [Installation](#-installation)
+- [Examples](#-examples)
   - [Curation](#curation)
   - [Masking](#masking)
   - [Classification](#classification)
   - [Inference](#inference)
   - [Pipeline](#pipeline)
-- [Demo](#demo)
-- [Libraries](#libraries)
-- [Roadmap](#roadmap)
-- [Unlicense](#unlicense)
-- [Contributing](#contributing)
-- [Troubleshooting](#troubleshooting)
-- [Team](#team)
-- [Structure](#structure)
-- [References](#references)
+- [Demo](#-demo)
+- [Libraries](#-libraries)
+- [Roadmap](#-roadmap)
+- [Unlicense](#-unlicense)
+- [Contributing](#-contributing)
+- [Troubleshooting](#-troubleshooting)
+- [Team](#-team)
+- [Structure](#-structure)
+- [References](#-references)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
