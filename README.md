@@ -74,7 +74,7 @@ python --version
 ```
 If Python is not already installed or if it is installed with version 3.7 or lower, you will need to install a functional version of Python on your system by following the [official documentation](https://www.python.org/downloads/) that contains a detailed guide on how to setup Python.
 
-If you have Python version 3.4 or later (which is required to use Pl@ntBERT), pip should be included by default. To make sure you have it, you can type:
+If you have Python version 3.4 or later (which is required to use `Pl@ntBERT`), pip should be included by default. To make sure you have it, you can type:
 ```script
 pip --version
 ```
