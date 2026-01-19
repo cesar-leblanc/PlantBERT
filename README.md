@@ -300,7 +300,7 @@ If you plan to contribute new features, please first open an issue and discuss t
 ## 🚥 Troubleshooting
 
 - an internet connection is necessary for the check task (for GitHub access) and for the curation and inference tasks (for GBIF normalization).
-- before using a model for inference, make sure you trained this exact same model (with the required set of parameters) on the required task.
+- before using a model for inference, make sure you trained this exact same model (with the required set of parameters) on the given task.
 -  before curating a dataset, make sure it contains enough vegetation data (the more the better, both for vegetation plots and observations).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
