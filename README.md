@@ -239,6 +239,13 @@ python main.py --pipeline check curation masking classification inference
 ## 👀 Demo 
 
 If you only have a few vegetation plots from which you want to find potentially missing species or identify the habitat type, a quicker and easier way to use `Pl@ntBERT` is to visit the application hosted [here](https://huggingface.co/spaces/CesarLeblanc/plantbert_space).
+  
+<a href="https://huggingface.co/spaces/CesarLeblanc/plantbert_space">
+  <img height=175 align="center" src="Images/identification.png" />
+</a>
+<a href="https://huggingface.co/spaces/CesarLeblanc/plantbert_space">
+  <img height=175 align="center" src="Images/retrieval.png" />
+</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
