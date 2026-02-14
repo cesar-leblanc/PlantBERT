@@ -244,6 +244,7 @@ If you only have a few vegetation plots from which you want to find potentially 
   <a href="https://huggingface.co/spaces/CesarLeblanc/plantbert_space">
     <img height="250" src="Images/identification.png" />
   </a>
+  <img width="30" />
   <a href="https://huggingface.co/spaces/CesarLeblanc/plantbert_space">
     <img height="250" src="Images/retrieval.png" />
   </a>
