@@ -339,7 +339,9 @@ If you plan to contribute new features, please first open an issue and discuss t
     ├── Datasets                                  -> Vegetation datasets
     │   └── vegetation_plots_example.csv          -> Vegetation plots example data
     ├── Images                                    -> Image assets
+    │   ├── identification.png                    -> Illustration of classification
     │   ├── logo.png                              -> Project logo
+    │   ├── retrieval.png                         -> Illustration of masking
     │   └── tasks.png                             -> List of tasks image
     ├── Models                                    -> Pre-trained and fine-tuned models
     ├── README.md                                 -> Project overview
