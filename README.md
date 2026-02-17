@@ -38,6 +38,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
 
 ## 📚 Table of Contents
 
+- [Table of Contents](#-table-of-contents)
 - [Prerequisites](#-prerequisites)
 - [Data](#-data)
 - [Installation](#-installation)
