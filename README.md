@@ -36,9 +36,9 @@ If you use this code for your work and wish to credit the authors, you can cite 
 ```
 This framework aims to leverage large language models to learn the "syntax" of plant species co-occurrence patterns. In particular, because `Pl@ntBERT` captures latent dependencies between species across diverse ecosystems, the framework can be used to identify the habitats of vegetation plots.
 
-## 📚 Table of Contents
+## 📚 Contents
 
-- [Table of Contents](#-table-of-contents)
+- [Contents](#-contents)
 - [Prerequisites](#-prerequisites)
 - [Data](#-data)
 - [Installation](#-installation)
