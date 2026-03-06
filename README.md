@@ -340,6 +340,7 @@ If you plan to contribute new features, please first open an issue and discuss t
     ├── Datasets                                  -> Vegetation datasets
     │   └── vegetation_plots_example.csv          -> Vegetation plots example data
     ├── Images                                    -> Image assets
+    │   ├── guarden.png                           -> Logo of GUARDEN
     │   ├── identification.png                    -> Illustration of classification
     │   ├── logo.png                              -> Project logo
     │   ├── retrieval.png                         -> Illustration of masking
