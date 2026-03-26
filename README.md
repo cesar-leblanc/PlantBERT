@@ -396,6 +396,15 @@ If you plan to contribute new features, please first open an issue and discuss t
 
 The research leading to the creation of Pl@ntBERT was funded by the European Commission through the GUARDEN (safeGUARDing biodivErsity aNd critical ecosystem services across sectors and scales) and MAMBO (Modern Approaches to the Monitoring of BiOdiversity) projects. These projects received funding from the European Union's Horizon Europe research and innovation programme under grant agreements number 101060693 (start date of 1 November 2022 and end date of 31 October 2025) and number 101060639 (start date of 1 September 2022 and end date of 31 August 2026), respectively.
 
+<p align="center">
+  <a href="https://guarden.org/">
+    <img height="50" src="Images/guarden.png" />
+  </a>
+  <a href="https://www.mambo-project.eu/">
+    <img height="50" src="Images/mambo.png" />
+  </a>
+</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎓 References
