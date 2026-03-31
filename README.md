@@ -400,6 +400,7 @@ The research leading to the creation of Pl@ntBERT was funded by the European Com
   <a href="https://guarden.org/">
     <img height="50" src="Images/guarden.png" />
   </a>
+  <img width="150" />
   <a href="https://www.mambo-project.eu/">
     <img height="50" src="Images/mambo.png" />
   </a>
