@@ -406,6 +406,8 @@ The research leading to the creation of Pl@ntBERT was funded by the European Com
   </a>
 </p>
 
+The content of this repository reflects the views of its authors only, and the European Commission cannot be held responsible for any use that may be made of the code contained herein.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎓 References
