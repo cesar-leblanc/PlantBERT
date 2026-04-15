@@ -410,7 +410,7 @@ The content of this repository reflects the views of its authors only, and the E
 
 <div align="center">
   <a href="https://commission.europa.eu/index_en">
-    <img height="150" src="Images/commission.png">
+    <img height="150" src="Images/commission.png" alt="Logo of Commission">
   </a>
 </div>
 
