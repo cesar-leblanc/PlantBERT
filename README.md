@@ -334,7 +334,7 @@ If you plan to contribute new features, please first open an issue and discuss t
     │   └── pull_request_template.md              -> Pull request template
     ├── CODE_OF_CONDUCT.md                        -> Community guidelines
     ├── CONTRIBUTING.md                           -> Contribution instructions
-    ├── Data                                      -> Data files                     
+    ├── Data                                      -> Data files
     │   ├── eunis_habitats.xlsx                   -> EUNIS habitat data
     │   ├── header_example.csv                    -> Header example file
     │   └── species_example.csv                   -> Species example data
