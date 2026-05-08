@@ -344,7 +344,7 @@ If you plan to contribute new features, please first open an issue and discuss t
     │   ├── commission.png                        -> Logo of Commission
     │   ├── guarden.png                           -> Logo of GUARDEN
     │   ├── identification.png                    -> Illustration of classification
-    │   ├── logo.png                              -> Project logo
+    │   ├── logo.png                              -> Logo of Pl@ntBERT
     │   ├── mambo.png                             -> Logo of MAMBO
     │   ├── retrieval.png                         -> Illustration of masking
     │   └── tasks.png                             -> List of tasks image
