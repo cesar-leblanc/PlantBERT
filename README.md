@@ -244,11 +244,11 @@ If you only have a few vegetation plots from which you want to find potentially 
   
 <p align="center">
   <a href="https://huggingface.co/spaces/CesarLeblanc/plantbert_space">
-    <img height="250" src="Images/identification.png" />
+    <img height="250" src="Images/identification.png" alt="Demo of identification" />
   </a>
   <img width="30" />
   <a href="https://huggingface.co/spaces/CesarLeblanc/plantbert_space">
-    <img height="250" src="Images/retrieval.png" />
+    <img height="250" src="Images/retrieval.png" alt="Demo of retrieval" />
   </a>
 </p>
 
