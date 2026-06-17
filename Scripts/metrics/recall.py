@@ -14,7 +14,7 @@ _KWARGS_DESCRIPTION = """
 Args:
 - **predictions** (`list` of `int`): The predicted labels.
 - **references** (`list` of `int`): The ground truth labels.
-- **labels** (`list` of `int`): The set of labels to include when `average` is not set to `binary`, and their order when average is `None`. Labels present in the data can be excluded in this input, for example to calculate a multiclass average ignoring a majority negative class, while labels not present in the data will result in 0 components in a macro average. For multilabel targets, labels are column indices. By default, all labels in y_true and y_pred are used in sorted order. Defaults to None.
+- **labels** (`list` of `int`): The set of labels to include when `average` is not set to `binary`, and their order when average is `None`. Labels present in the data can be excluded in this input, for example to calculate a multiclass average ignoring a majority negative class, while labels not present in the data will result in 0 components in a macro average. For multilabel targets, labels are column indices. By default, all labels in y_true and y_pred are used in sorted order. Defaults to `None`.
 - **pos_label** (`int`): The class label to use as the 'positive class' when calculating the recall. Defaults to `1`.
 - **average** (`string`): This parameter is required for multiclass/multilabel targets. If None, the scores for each class are returned. Otherwise, this determines the type of averaging performed on the data. Defaults to `'binary'`.
     - `'binary'`: Only report results for the class specified by `pos_label`. This is applicable only if the target labels and predictions are binary.
