@@ -23,7 +23,7 @@ Args:
     - `'weighted'`: Calculate metrics for each label, and find their average weighted by support (the number of true instances for each label). This alters `'macro'` to account for label imbalance. Note that it can result in an F-score that is not between precision and recall.
     - `'samples'`: Calculate metrics for each instance, and find their average (only meaningful for multilabel classification).
 - **sample_weight** (`list` of `float`): Sample weights. Defaults to `None`.
-- **zero_division** (): Sets the value to return when there is a zero division. Defaults to `'warn'`.
+- **zero_division** (`int` or `string`): Sets the value to return when there is a zero division. Defaults to `'warn'`.
     - `'warn'`: If there is a zero division, the return value is `0`, but warnings are also raised.
     - `0`: If there is a zero division, the return value is `0`.
     - `1`: If there is a zero division, the return value is `1`.
