@@ -24,7 +24,6 @@ Args:
         - 'samples': Calculate metrics for each instance, and find their average (only meaningful for multilabel classification).
     sample_weight (`list` of `float`): Sample weights. Defaults to `None`.
     zero_division (`int` or `string`): Sets the value to return when there is a zero division. Defaults to `'warn'`.
-
         - 0: Returns 0 when there is a zero division.
         - 1: Returns 1 when there is a zero division.
         - 'warn': Raises warnings and then returns 0 when there is a zero division.
