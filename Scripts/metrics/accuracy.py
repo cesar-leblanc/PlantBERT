@@ -18,7 +18,7 @@ _KWARGS_DESCRIPTION = """
 Args:
     predictions (`list` of `int`): Predicted labels.
     references (`list` of `int`): Ground truth labels.
-    normalize (`boolean`): If set to False, returns the number of correctly classified samples. Otherwise, returns the fraction of correctly classified samples. Defaults to True.
+    normalize (`boolean`): If set to `False`, returns the number of correctly classified samples. Otherwise, returns the fraction of correctly classified samples. Defaults to True.
     sample_weight (`list` of `float`): Sample weights. Defaults to None.
 
 Returns:
