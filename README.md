@@ -11,7 +11,9 @@
 </p>
 
 <div align="center">
-  <img src="Images/logo.png" alt="Project logo" width="200">
+  <a href="https://www.nature.com/articles/s41477-025-02105-7">
+    <img src="Images/logo.png" alt="Project logo" width="200">
+  </a>
   <h2 align="center">Pl@ntBERT</h2>
   <p align="center">Learning the syntax of plant assemblages</p>
   <a href="https://github.com/cesar-leblanc/plantbert">View framework</a>
