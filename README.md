@@ -4,7 +4,7 @@
   <a href="https://github.com/cesar-leblanc/plantbert/graphs/contributors"><img src="https://img.shields.io/github/contributors/cesar-leblanc/plantbert" alt="GitHub contributors"></a>
   <a href="https://github.com/cesar-leblanc/plantbert/network/members"><img src="https://img.shields.io/github/forks/cesar-leblanc/plantbert" alt="GitHub forks"></a>
   <a href="https://github.com/cesar-leblanc/plantbert/issues"><img src="https://img.shields.io/github/issues/cesar-leblanc/plantbert" alt="GitHub issues"></a>
-  <a href="https://github.com/cesar-leblanc/plantbert/blob/main/LICENSE"><img src="https://img.shields.io/github/license/cesar-leblanc/plantbert" alt="License"></a>
+  <a href="https://github.com/cesar-leblanc/plantbert/blob/main/UNLICENSE.txt"><img src="https://img.shields.io/github/license/cesar-leblanc/plantbert" alt="License"></a>
   <a href="https://github.com/cesar-leblanc/plantbert/pulls"><img src="https://img.shields.io/github/issues-pr/cesar-leblanc/plantbert" alt="GitHub pull requests"></a>
   <a href="https://github.com/cesar-leblanc/plantbert/stargazers"><img src="https://img.shields.io/github/stars/cesar-leblanc/plantbert" alt="GitHub stars"></a>
   <a href="https://github.com/cesar-leblanc/plantbert/watchers"><img src="https://img.shields.io/github/watchers/cesar-leblanc/plantbert" alt="GitHub watchers"></a>
