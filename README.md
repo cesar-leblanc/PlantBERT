@@ -222,7 +222,7 @@ python main.py --pipeline inference
 
 Some changes can be made from this command to predict differently. Here is an example to predict the 3 most likely habitat types using the first fold of an already trained base model with a batch size of 2 and a learning rate of 1e-05 on randomly-ordered species sequences:
 ```script
-python main.py --pipeline inference --model_habitat plantbert_text_classification_model_base_random_1_1e-05_0 --predict_species False --k_habitat 3
+python main.py --pipeline inference --model_habitat plantbert_text_classification_model_base_random_2_1e-05_0 --predict_species False --k_habitat 3
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
