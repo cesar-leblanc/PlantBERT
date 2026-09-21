@@ -70,7 +70,7 @@ This framework aims to leverage large language models to learn the "syntax" of p
 + Linux: CentOS (7.4.1708)
 + Windows: 10 (22H2)
 
-Python version 3.8 or higher, pip, Git, CUDA, and Git LFS are required.
+Python 3.8 through 3.11, pip, Git, CUDA, and Git LFS are required.
 
 On many systems Python comes pre-installed. You can try running the following command to check and see if a correct version is already installed:
 ```script
