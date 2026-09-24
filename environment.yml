@@ -2,6 +2,7 @@ name: pl@ntbert
 channels:
   - defaults
 dependencies:
+  - python=3.10
   - pip
   - pip:
       - accelerate==0.25.0
