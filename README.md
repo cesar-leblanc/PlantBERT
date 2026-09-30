@@ -76,7 +76,7 @@ On many systems Python comes pre-installed. You can try running the following co
 ```script
 python --version
 ```
-If Python is not already installed or if it is installed with version 3.7 or lower, you will need to install a functional version of Python on your system by following the [official documentation](https://www.python.org/downloads/) that contains a detailed guide on how to setup Python.
+If Python is not already installed or if it is installed with version 3.7 or lower, you will need to install a functional version of Python on your system by following the [official documentation](https://www.python.org/downloads/) that contains a detailed guide on how to set up Python.
 
 If you have a supported Python version, pip should be included by default. To make sure you have it, you can type:
 ```script
