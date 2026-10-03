@@ -258,7 +258,7 @@ If you only have a few vegetation plots from which you want to find potentially 
 
 ## 🧠 Libraries
 
-This section lists every major frameworks/libraries used to create the models included in the project:
+This section lists every major framework/library used to create the models included in the project:
 
 * [![PyTorch](https://img.shields.io/badge/PyTorch-red?logo=pytorch&logoColor=white)](https://pytorch.org/) - for tensor computation with strong GPU acceleration
 * [![scikit-learn](https://img.shields.io/badge/scikit--learn-orange?logo=scikit-learn&logoColor=white)](https://scikit-learn.org) - for quantifying the quality of the predictions
