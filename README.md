@@ -31,7 +31,9 @@ If you use this code for your work and wish to credit the authors, you can cite 
   title={Learning the syntax of plant assemblages},
   author={Leblanc, C{\'e}sar and Bonnet, Pierre and Servajean, Maximilien and Thuiller, Wilfried and Chytr{\`y}, Milan and A{\'c}i{\'c}, Svetlana and Argagnon, Olivier and Biurrun, Idoia and Bonari, Gianmaria and Bruelheide, Helge and others},
   journal={Nature Plants},
-  pages={1--15},
+  volume={11},
+  number={10},
+  pages={2026--2040},
   year={2025},
   publisher={Nature Publishing Group UK London}
 }
