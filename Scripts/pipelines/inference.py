@@ -16,14 +16,13 @@ class MakePredictions:
 
     def predict_habitat(self, args, vegetation_plots):
         model = load_model(args, "predict habitat")
-        tokenizer = load_tokenizer(args, "predict habitat")
-        predictions, elapsed_time = make_predictions(args, vegetation_plots, model, tokenizer, "predict habitat")
+        predictions, elapsed_time = make_predictions(args, vegetation_plots, model, model.tokenizer, "predict habitat")
         return predictions, elapsed_time
 
     def predict_species(self, args, vegetation_plots):
         model = load_model(args, "predict species")
-        tokenizer = load_tokenizer(args, "predict species")
-        predictions, scores, positions, completed_plots, elapsed_time =  make_predictions(args, vegetation_plots, model, tokenizer, "predict species")
+        predictions, scores, positions, completed_plots, elapsed_time = make_predictions(
+            args, vegetation_plots, model, model.tokenizer, "predict species")
         return predictions, scores, positions, completed_plots, elapsed_time
 
     def write_predictions(self, vegetation_plots, type, predictions, scores=None, positions=None, completed_plots=None):
